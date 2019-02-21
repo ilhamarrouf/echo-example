@@ -18,6 +18,18 @@
   version = "v1.4.1"
 
 [[projects]]
+  branch = "master"
+  digest = "1:3443c5c153378ec421dcaf71d730c154f9d6c94fbb604316bfc5906969f94ffe"
+  name = "github.com/ilhamarrouf/echo-example"
+  packages = [
+    "controllers",
+    "db",
+    "models",
+  ]
+  pruneopts = "UT"
+  revision = "130ddaad6b9e59183d5df801d77d818b6685668d"
+
+[[projects]]
   digest = "1:efd601ad1d1189884f37ed075fadb5bbd17f1f5acf5862827247c6da56d125ba"
   name = "github.com/labstack/echo"
   packages = [
@@ -105,6 +117,9 @@
   analyzer-version = 1
   input-imports = [
     "github.com/go-sql-driver/mysql",
+    "github.com/ilhamarrouf/echo-example/controllers",
+    "github.com/ilhamarrouf/echo-example/db",
+    "github.com/ilhamarrouf/echo-example/models",
     "github.com/labstack/echo",
     "github.com/labstack/echo/middleware",
   ]
