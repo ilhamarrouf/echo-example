@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/ilhamarrouf/echo-example/controllers"
 	"net/http"
 )
 
@@ -20,6 +21,8 @@ func main() {
 	app.GET("/", func(c echo.Context) error {
 		return c.JSON(http.StatusCreated, "Welcome to Echo Framework using golang.")
 	})
+
+	app.GET("/employees", controllers.GetEmployees)
 
 	app.Logger.Fatal(app.Start(":3000"))
 }
