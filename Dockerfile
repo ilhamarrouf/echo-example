@@ -1,6 +1,6 @@
 FROM golang:1.11
 
-MAINTAINER Marprin <ilham.arrouf@gmail.com>
+MAINTAINER Muhamad Ilham Arrouf <ilham.arrouf@gmail.com>
 
 # Install support dependency
 RUN apt update && apt install -y vim less
